@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Listado de Paciente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pacienteListStyles.css">
+    <script src="https://kit.fontawesome.com/aa78b6c036.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static.js/get_paciente.js"></script>
+    <script type="text/javascript" src="/static.js/update_paciente.js"></script>
+    <script type="text/javascript" src="/static.js/delete_paciente.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item" id="btn1" >
+            <a class="nav-link" href="/"><i id="icon1" class="fa-solid fa-user-plus"></i>&nbspAgregar Paciente</a>
+        </li>
+    </ul>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item" id="btn2">
+            <a class="nav-link" href="/pacienteList.html">Todos</a>
+        </li>
+    </ul>
+
+    <div id="div_paciente_table">
+        <h1>Pacientes</h1>
+        <div class="row col-md-7 table-responsive">
+            <table id="pacienteTable" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+
+                </tr>
+                </thead>
+                <tbody id="pacienteTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-7"
+             id="div_paciente_updating">
+            <form id="update_paciente_form">
+                <div class="form-group">
+
+                    <input type="text" class="form-control" id="paciente_id" readonly>
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="nombre" id="nombre">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="apellido" id="apellido">
+                </div>
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="dni" id="dni">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            <div id="response" style="display:none; margin:10px">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

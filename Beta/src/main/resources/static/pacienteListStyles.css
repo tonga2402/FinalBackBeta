@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+.container {
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+:root {
+    --firstColor: rgba(0, 0, 0, 1);
+    --secondColor: rgba(44, 214, 214, 1);
+    --thirdColor: rgba(255, 255, 255, 1);
+    --gradient: rgb(151, 230, 230);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    list-style: none;
+}
+html{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(var(--thirdColor), var(--gradient));
+    height: 100%;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.nav.nav-pills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.nav-item a {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--firstColor);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    color: var(--firstColor);
+    background-color: var(--thirdColor);
+}
+
+.nav-item a:hover{
+    color: var(--secondColor);
+    border-color: var(--secondColor) ;
+}
+
+.nav-item a i{
+    color: var(--secondColor);
+}
+
+.row table{
+    background-color: var(--thirdColor);
+    padding: 1rem;
+    margin-left: 0.1rem;
+    border: 1px solid var(--firstColor);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+}
+#div_paciente_table{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+.col-sm-7{
+    display: none;
+}
+#btn1{
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+#btn2{
+
+}
+
+h1{
+
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: var(--secondColor);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2rem 1.2rem;
+}
+
+
+input{
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1.3rem;
+    border: 1px solid var(--firstColor);
+    text-align: center;
+    font-size: 0.71rem;
+}
+
+button{
+    margin: 1rem;
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+button:hover{
+    color: var(--firstColor);
+    transform: scale(1.03);
+}
